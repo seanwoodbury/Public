@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<!--Program: Dillsboro - POI.htm 
+    Author: Kyra Huffsmith
+    Date: 11/11/2015
+    Description: Template page for individual point of interest (or "Place").-->
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Sylva Tour | Mobile</title>
+    <link href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" rel="stylesheet" />
+    <link href="Stylesheets/Main.css" rel="stylesheet" />
+    <link href="photoswipe/photoswipe.css" rel="stylesheet" />
+
+   
+
+
+
+
+
+
+
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <script src="photoswipe/lib/klass.min.js"></script>
+    <script src="photoswipe/code.photoswipe.jquery-3.0.5.js"></script>
+    <script src="main.js"></script>
+    <script src="POI.js"></script>
+     
+     <!--Google Anaylitcs
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36666405-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>-->  
+
+</head>
+
+<body>
+<div data-role="page" id="poi">
+	<div data-role="header">
+        <a href="#" id="icon-back" data-role="button" data-theme="none" data-corners="false" data-shadow="false" rel="external"><img src="images/back.png" alt="back" /></a>
+        <a href="#" id="icon-directions" data-role="button" data-theme="none" data-corners="false" data-shadow="false" rel="external"><img src="images/directions.png" alt="directions" /></a>
+        <img src="images/logo.png" id="headerlogo" />
+        <hr />
+	</div>
+    <div data-role="content">
+        <div id="placeTitle"></div>
+        <div id="top">
+            <div id="top-left">
+                <br />
+                <span id="placeAddress1"></span><br />
+                <span id="placeCity"></span><span id="placeState"></span><span id="placeZip"></span><br />
+                <span id="placePhone"></span><br />
+                <span id="placeURL"></span><br /><br />
+                <span id="petFriendly"></span><br />
+            </div>
+            <div id="top-right">
+                <ul id="Gallery">
+                    <li id="1"></li>                    
+                    <li id="2"></li>
+                    <li id="3"></li>
+                    <li id="4"></li>
+                    <li id="5"></li>
+                    <li id="6"></li>
+                </ul>
+                
+
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="description" data-role="collapsible" data-collapsed="false" data-content-theme="d">
+            <h3>Description</h3>
+            <p><span id="desc"></span></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

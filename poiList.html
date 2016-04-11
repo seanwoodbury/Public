@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Sylva Tour | Mobile</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="Stylesheet" href="Stylesheets/Main.css" />
+
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="main.js"></script>
+    <script src="poiList_Main.js"></script>
+    <script src="poiList_List.js"></script>
+    <script src="poiList_Map.js"></script>
+    <script src="poiList_CurrentPosition.js"></script> 
+
+    <!--Google Anaylitcs
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36666405-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>-->
+
+</head>
+
+<body>
+<!-- ============================ -->
+<!--      LIST PAGE (#listPage)   -->
+<!-- ============================ -->
+     <div data-role="page" id="poi_list">
+	    <div data-role="header">
+            <a href="#" id="icon-back" data-role="button" data-theme="none" data-corners="false" data-shadow="false" rel="external"><img src="images/back.png" alt="back" /></a>
+            <!--a href="#" id="icon-map" data-role="button" data-theme="none" data-corners="false" data-shadow="false"><img src="images/map.png" alt="map" /></a>-->
+            <img src="images/logo.png" id="headerlogo" />
+		    <h1 id="listPageTitle"></h1>
+            <hr />
+	    </div>
+	    <div data-role="content">
+            <ul data-role="listview" id="lstPOIs">
+                <!-- List Content will go here -->
+            </ul>
+        </div>
+    </div>
+
+<!-- ========================== -->
+<!--      MAP PAGE (#poi_map)    -->
+<!-- ========================== -->
+<div data-role="page" id="poi_map">
+	<div data-role="header">
+        <a href="#" id="icon-back" data-role="button" data-theme="none" data-corners="false" data-shadow="false"><img src="images/back.png" alt="back" /></a>
+        <a href="#" id="icon-list" data-role="button" data-theme="none" data-corners="false" data-shadow="false"><img src="images/list.png" alt="list" /></a>
+        <img src="images/logo.png" id="headerlogo_2" />
+        <h1 id="mapPageTitle"></h1>
+        <hr />
+	</div>
+    <div data-role="content">
+        <div id="divMapCanvas">
+        </div>
+    </div>
+ </div>
+</body>
+</html>
